@@ -1,0 +1,59 @@
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*~
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.ipynb_checkpoints/
+
+# Envs / local secrets
+.env
+*.pem
+wandb/
+
+# Large / machine-local artifacts (do not publish)
+**/checkpoints/
+**/datasets/
+**/factors/
+**/evals/
+**/out_file/
+**/o_file/
+**/e_file/
+**/tmp/
+**/__pycache__/
+
+# Generated images / logs
+**/sample_ema*/
+**/traverse_*/
+*.ckpt
+*.pt
+!pretrained/*.pt
+*.pth
+*.pkl
+*.lmdb/
+data.mdb
+lock.mdb
+
+# DiffAE runtime outputs
+models/DiffAE/imgs/
+models/DiffAE/imgs_align/
+models/DiffAE/imgs_interpolate/
+models/DiffAE/imgs_manipulated/
+models/DiffAE/apply_factor_outputs/
+models/DiffAE/generated/
+models/DiffAE/latent_infer/
+models/DiffAE/temp/
+
+# StyleGAN runtime
+models/StyleGAN2/ckpt/
+models/StyleGAN2/sample/
+models/StyleGAN2/prepare_data_out/
+models/StyleGAN3/*.pkl
